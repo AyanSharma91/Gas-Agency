@@ -73,6 +73,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn2.setOnClickListener{
+            var intent = Intent(this@MainActivity,Transactions_Details_Activity::class.java)
+            startActivity(intent)
+        }
 
 
 

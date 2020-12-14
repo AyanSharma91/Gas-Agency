@@ -43,7 +43,7 @@ class Distribution_Record : AppCompatActivity() {
 
         for(i in 1..10)
         {
-            list.add(User("Ayan Sharma","7300284441","10","23/4/20","4"))
+            list.add(User("Ayan Sharma","7300284441","10","23/4/20","4","6","900","8000","Payment is due to the date"))
         }
 
         adapter= Recycler_Adapter(this@Distribution_Record, list)

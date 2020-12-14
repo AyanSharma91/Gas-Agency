@@ -30,6 +30,11 @@ class Recycler_Adapter(val context: Context, val arr: ArrayList<User>) : Recycle
         holder.nos_delivered.text = book.nos_delivered
         holder.phoneNumber.text = book.phoneNumber
         holder.nos_given.text = book.nos_given
+        holder.amount_per_cylinder.text = book.amount_per_cylinder
+        holder.nos_returned.text= book.nos_returned
+        holder.total_amount.text= book.total_amount
+        holder.remarks.text = book.remarks
+
     }
 
     class DashboardViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -38,6 +43,10 @@ class Recycler_Adapter(val context: Context, val arr: ArrayList<User>) : Recycle
         var nos_given = view.findViewById<TextView>(R.id.nos_given)
         var date = view.findViewById<TextView>(R.id.date)
         var nos_delivered = view.findViewById<TextView>(R.id.nos_delivered)
+        var nos_returned = view.findViewById<TextView>(R.id.nos_returned)
+        var amount_per_cylinder = view.findViewById<TextView>(R.id.amount_per_cylinder)
+        var total_amount = view.findViewById<TextView>(R.id.total_amount)
+        var  remarks = view.findViewById<TextView>(R.id.remarks)
     }
 }
 
