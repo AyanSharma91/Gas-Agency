@@ -125,7 +125,7 @@
             app:layout_constraintVertical_bias="0.80" />
 
         <TextView
-            android:id="@+id/total_amount"
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5400"
@@ -150,7 +150,7 @@
             app:layout_constraintVertical_bias="0.60" />
 
         <TextView
-            android:id="@+id/amount_per_cylinder"
+            android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="900"
@@ -175,7 +175,7 @@
             app:layout_constraintVertical_bias="0.70" />
 
         <TextView
-            android:id="@+id/nos_returned"
+            android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4"
@@ -189,11 +189,11 @@
             app:layout_constraintVertical_bias="0.60" />
 
         <TextView
-            android:id="@+id/remarks"
+            android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:hint="Remarks"
+            android:text="Remarks"
             android:textColor="#000"
             android:background="#FBC0C0"
             android:layout_margin="5dp"
