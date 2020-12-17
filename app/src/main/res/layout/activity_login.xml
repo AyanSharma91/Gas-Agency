@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary">
 
-            <include layout="@layout/layout_new_toolbar_second"></include>
+            <include layout="@layout/layout_new_toolbar"></include>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,10 +53,10 @@
                 tools:ignore="MissingClass">
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/username"
+                    android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="UserName"
+                    android:hint="email"
                     android:textColorHint="#7A8089" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,11 +77,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+                android:id="@+id/text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:text="Don't Have an Account? Sign Up!"
-                android:textStyle="bold"
-                android:layout_marginBottom="15dp"/>
+                android:textStyle="bold" />
             <Button
                 android:id="@+id/btn_LogIn"
                 android:layout_width="wrap_content"
