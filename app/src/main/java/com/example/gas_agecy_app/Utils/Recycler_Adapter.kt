@@ -1,11 +1,14 @@
 package com.example.gas_agecy_app.Utils
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.gas_agecy_app.Activities.NewSupplierDetail
 import com.example.gas_agecy_app.Models.User
 import com.example.gas_agecy_app.R
 import org.w3c.dom.Text
@@ -34,6 +37,11 @@ class Recycler_Adapter(val context: Context, val arr: ArrayList<User>) : Recycle
         holder.nos_returned.text= book.nos_returned
         holder.total_amount.text= book.total_amount
         holder.remarks.text = book.remarks
+        holder.parent_layout.setOnClickListener{
+            var intent = Intent(context, NewSupplierDetail::class.java)
+            context.startActivity(intent)
+
+        }
 
     }
 
@@ -47,6 +55,7 @@ class Recycler_Adapter(val context: Context, val arr: ArrayList<User>) : Recycle
         var amount_per_cylinder = view.findViewById<TextView>(R.id.amount_per_cylinder)
         var total_amount = view.findViewById<TextView>(R.id.total_amount)
         var  remarks = view.findViewById<TextView>(R.id.remarks)
+        var parent_layout = view.findViewById<CardView>(R.id.parent_layout)
     }
 }
 
