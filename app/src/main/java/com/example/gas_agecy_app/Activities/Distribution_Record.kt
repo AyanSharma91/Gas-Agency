@@ -27,7 +27,6 @@ class Distribution_Record : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_distribution_record)
-
         title= findViewById(R.id.title_new)
         recyclerView = findViewById(R.id.recycler_view)
         back_button= findViewById(R.id.back_button)
