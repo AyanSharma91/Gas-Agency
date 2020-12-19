@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gas_agecy_app.Activities.NewSupplierDetail
@@ -49,7 +50,9 @@ class Recycler_Adapter(val context: Context, val arr: ArrayList<User>) : Recycle
             intent.putExtra("nos_returned", holder.nos_returned.text)
             intent.putExtra("total_amount",holder.total_amount.text)
             intent.putExtra("remarks", holder.remarks.text)
-            context.startActivity(intent)
+            if(context.getSharedPreferences("Auth", AppCompatActivity.MODE_PRIVATE).getString("password", null)=="gas_agency") {
+                context.startActivity(intent)
+            }
 
 
 

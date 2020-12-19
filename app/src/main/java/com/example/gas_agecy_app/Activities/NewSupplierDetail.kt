@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import com.example.gas_agecy_app.Models.User
 import com.example.gas_agecy_app.R
 import com.google.android.gms.tasks.OnSuccessListener
@@ -19,6 +20,7 @@ class NewSupplierDetail : AppCompatActivity() {
      lateinit var number : EditText
      lateinit var date  : EditText
      lateinit var  cylinder_given : EditText
+    lateinit var back_button : ImageView
      lateinit var  amount_per_cylinders  : EditText
      lateinit var  remarks  : EditText
      lateinit var  nos_delivered  : EditText
@@ -35,6 +37,7 @@ class NewSupplierDetail : AppCompatActivity() {
         name = findViewById(R.id.name)
         number = findViewById(R.id.number)
         date = findViewById(R.id.date)
+        back_button= findViewById(R.id.back_button)
         cylinder_given = findViewById(R.id.cylinder_given)
         amount_per_cylinders = findViewById(R.id.amount_per_cylinders)
         remarks = findViewById(R.id.remarks)
@@ -58,6 +61,11 @@ class NewSupplierDetail : AppCompatActivity() {
 
         }
 
+
+        back_button.setOnClickListener{
+
+            finish()
+        }
 
 
         save_btn.setOnClickListener{

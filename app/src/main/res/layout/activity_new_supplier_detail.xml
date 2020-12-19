@@ -137,7 +137,7 @@
                 android:id="@+id/nos_delivered"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cylinders Returned"
+                android:hint="Cylinders Delivered"
                 android:inputType="number"
                 android:textColorHint="#7A8089" />
 
