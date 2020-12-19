@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.Transactions_Details_Activity"></activity>
-        <activity android:name=".Activities.NewSupplierDetail"></activity>
+        <activity android:name=".Activities.Admin_Verification"
+            android:noHistory="true"
+            ></activity>
+        <activity android:name=".Activities.NewSupplierDetail" />
         <activity android:name=".Activities.Distribution_Record" />
         <activity
             android:name=".Activities.SplashScreen"

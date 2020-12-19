@@ -37,19 +37,38 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+       android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:src="@drawable/add"
-        android:backgroundTint="@color/colorPrimary"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="26dp"
+        android:backgroundTint="#C81406"
         android:layout_marginRight="26dp"
+        android:src="@drawable/add"
+
         android:layout_marginBottom="27dp"
-        android:clickable="true"
+
         />
+
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="50dp"
+            android:indeterminateTint="@color/colorPrimary"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp">
+
+        </ProgressBar>
+
+    </RelativeLayout>
 
 
 
