@@ -21,8 +21,7 @@ class MainActivity : AppCompatActivity() {
     var imageList = ArrayList<sliderImages>()
 
     lateinit var btn1 : Button
-    lateinit var btn2 : Button
-    lateinit var btn3 : Button
+
 
 
 
@@ -31,8 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn1= findViewById(R.id.btn1)
-        btn2= findViewById(R.id.btn2)
-        btn3= findViewById(R.id.btn3)
+
 
         view_pager= findViewById(R.id.view_pager2)
         timer= Timer()
@@ -73,10 +71,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btn2.setOnClickListener{
-            var intent = Intent(this@MainActivity,Transactions_Details_Activity::class.java)
-            startActivity(intent)
-        }
+
 
 
 

@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activities.RegistrationActivity"></activity>
-        <activity android:name=".Activities.`RegistrationActivity.java`" />
         <activity android:name=".Activities.LoginActivity" />
         <activity android:name=".Activities.NewSupplierDetail" />
         <activity android:name=".Activities.Distribution_Record" />

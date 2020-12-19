@@ -24,6 +24,15 @@
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +44,7 @@
         tools:ignore="MissingConstraints"
         app:layout_constraintTop_toBottomOf="@id/toolbar3">
     <LinearLayout
-        android:layout_width="391dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
@@ -69,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Supplier Mobile Number"
-                android:inputType="textPassword"
+                android:inputType="number"
                 android:textColorHint="#7A8089" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -84,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Date"
-                android:inputType="textPassword"
+                android:inputType="date"
                 android:textColorHint="#7A8089" />
         </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
@@ -98,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Cylinders given"
-                    android:inputType="textPassword"
+                    android:inputType="number"
                     android:textColorHint="#7A8089" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -109,24 +118,92 @@
                 android:layout_margin="20dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/amount"
+                    android:id="@+id/amount_per_cylinders"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Amount Per Cylinder"
-                    android:inputType="textPassword"
+                    android:inputType="number"
                     android:textColorHint="#7A8089" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nos_delivered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cylinders Returned"
+                android:inputType="number"
+                android:textColorHint="#7A8089" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nos_returned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cylinders Returned"
+                android:inputType="number"
+                android:textColorHint="#7A8089" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/total_amounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Amounts"
+                android:inputType="number"
+                android:textColorHint="#7A8089" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/remarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Remarks"
+                android:inputType="textMultiLine"
+                android:textColorHint="#7A8089" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <Button
-            android:id="@+id/btn_LogIn"
+            android:id="@+id/save_btn"
             android:layout_width="wrap_content"
+            android:background="@drawable/purplebutton"
+            android:textColor="#fff"
+            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content"
             android:text="Save" />
 
     </LinearLayout>
     </androidx.cardview.widget.CardView>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
